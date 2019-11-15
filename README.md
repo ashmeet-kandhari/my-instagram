@@ -1,4 +1,4 @@
-# my-instagram
+# My-Instagram
 
 A web interface similar to pinterest using ReactJS.
 Only a single fake user has been created by default whose username and password is `user`.
