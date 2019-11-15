@@ -1,0 +1,21 @@
+.Login {
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  width: 300px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e6e6e6;
+}
+
+.Login__submit {
+  margin-top: 10px;
+}
+
+.Login__title {
+  padding: 30px;
+  margin: auto;
+  font-size: 40px;
+  font-family: "Alex Brush", cursive;
+}

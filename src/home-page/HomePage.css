@@ -1,0 +1,52 @@
+.HomePage__scroll {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 10px;
+  /* margin: auto; */
+}
+
+.HomePage__main {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.HomePage__masonary {
+  overflow: hidden;
+}
+
+.HomePage__masonary--item {
+  border-radius: 1px;
+  background: transparent;
+  border: none;
+  padding: 0px;
+  margin: 3px;
+}
+
+.HomePage__masonary--item:hover {
+  cursor: pointer;
+}
+
+.Modal__div {
+  background-color: #fff;
+  width: fit-content;
+  margin: auto;
+  top: 10%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.Modal__header,
+.Modal__footer {
+  padding: 5px;
+  width: 50vh;
+}
+
+img {
+  border-radius: 5px;
+  max-height: 75vh;
+  max-width: 75vh;
+  outline: none;
+}
