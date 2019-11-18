@@ -1,0 +1,11 @@
+.ImageLoader {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+}
+
+.ImageLoader__loader {
+  position: absolute;
+}

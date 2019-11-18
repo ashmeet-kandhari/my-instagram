@@ -1,0 +1,19 @@
+.MasonryLayout {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+
+.MasonryLayout__wrapper {
+  display: flex;
+  margin: auto;
+}
+
+.MasonryLayout__column {
+  flex: 0 0 auto;
+}
+
+.MasonryLayout__column--item {
+  flex: 0 0 auto;
+}
