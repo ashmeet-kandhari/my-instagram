@@ -9,7 +9,7 @@ import queryString from "query-string";
 const app = express();
 const router = express.Router();
 const imagesProxyURL = "https://pixabay.com/api/";
-const key = "14279920-85b13bc5686b620b28a5a9eeb";
+const key = "";
 
 const config = { jwtSecret: "this is a test", tokenExpireTime: 86400 };
 
