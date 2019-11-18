@@ -7,6 +7,8 @@ Only a single fake user has been created by default whose username and password 
 
 - Node > 8
 - run `npm i` from project root folder as well as `server` folder
+- By default images are fetched from "https://pixabay.com/api/"
+- You need to add your own account key for pixabay in `src/home-page/HomePage.js` to make it work.
 
 # Steps to run in production mode
 
