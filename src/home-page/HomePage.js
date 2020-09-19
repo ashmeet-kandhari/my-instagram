@@ -20,13 +20,13 @@ function HomePage(props) {
       .get("/api/images", {
         params: {
           per_page,
-          page: pageNum
-        }
+          page: pageNum,
+        },
       })
-      .then(res => {
-        setPageNum(prevPageNum => prevPageNum + 1);
+      .then((res) => {
+        setPageNum((prevPageNum) => prevPageNum + 1);
         setIsLoading(false);
-        setItems(prevItems => {
+        setItems((prevItems) => {
           return [...prevItems, ...res.data.hits];
         });
       });
@@ -71,7 +71,8 @@ function HomePage(props) {
       >
         <MasonryLayout
           columns={5}
-          gap={1}
+          isResponsive={true}
+          gap={0}
           className={"HomePage__scroll HomePage__masonary"}
           isLoading={isLoading}
         >
@@ -80,14 +81,14 @@ function HomePage(props) {
               <button
                 className="HomePage__masonary--item"
                 key={i}
-                onClick={event => handleOpen(event, v)}
+                onClick={(event) => handleOpen(event, v)}
               >
                 <ImageLoader
                   src={v.previewURL}
                   alt={v.tags}
                   style={{
-                    width: `252px`,
-                    height: `${v.previewHeight + 50}px`
+                    width: `245px`,
+                    height: `${v.previewHeight + 50 * Math.random() + i}px`,
                   }}
                 />
               </button>

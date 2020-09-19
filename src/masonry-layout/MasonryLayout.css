@@ -3,6 +3,7 @@
   flex-direction: column;
   margin: auto;
   align-items: center;
+  max-height: 100vh;
 }
 
 .MasonryLayout__wrapper {
@@ -12,6 +13,7 @@
 
 .MasonryLayout__column {
   flex: 0 0 auto;
+  width: 252px;
 }
 
 .MasonryLayout__column--item {

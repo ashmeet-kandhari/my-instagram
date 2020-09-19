@@ -5,6 +5,7 @@ body,
   width: 100%;
   display: flex;
   background-color: #fafafa;
+  overflow: hidden;
 }
 
 body {
