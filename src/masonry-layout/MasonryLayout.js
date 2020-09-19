@@ -67,7 +67,7 @@ export const MasonryLayout = (props) => {
         ref={i === 0 ? targetRef : null}
         className="MasonryLayout__column"
         style={{
-          marginLeft: `${i > 0 ? props.gap : 0}px`,
+          marginLeft: `${i > 0 ? props.gap : 0}px`
         }}
       >
         {columnWrapper[`column${i}`]}
@@ -87,12 +87,12 @@ MasonryLayout.propTypes = {
   columns: PropTypes.number.isRequired,
   gap: PropTypes.number.isRequired,
   children: PropTypes.arrayOf(PropTypes.element),
-  isLoading: PropTypes.bool,
+  isLoading: PropTypes.bool
 };
 
 MasonryLayout.defaultProps = {
   columns: 1,
   responsive: false,
   gap: 20,
-  isLoading: false,
+  isLoading: false
 };

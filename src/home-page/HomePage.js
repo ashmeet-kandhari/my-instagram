@@ -20,8 +20,8 @@ function HomePage(props) {
       .get("/api/images", {
         params: {
           per_page,
-          page: pageNum,
-        },
+          page: pageNum
+        }
       })
       .then((res) => {
         setPageNum((prevPageNum) => prevPageNum + 1);
@@ -88,7 +88,7 @@ function HomePage(props) {
                   alt={v.tags}
                   style={{
                     width: `245px`,
-                    height: `${v.previewHeight + 50 * Math.random() + i}px`,
+                    height: `${v.previewHeight + 50 * Math.random() + i}px`
                   }}
                 />
               </button>
